@@ -555,10 +555,10 @@ a:active { color: #CCC;
 }
 
 h1 {
-    font-size:1.5em;
+   font-size:2.4em; 
 }
 h2 {
-    font-size:2.4em;
+    font-size:2em;
 }
 h3 {
     font-size:1.5em;
@@ -625,14 +625,16 @@ article {
 }
 
 
-.banner h1 {
+.banner h2 {
 	font-size: 1.5em;
 	color: #fff;
-	margin-top: 317px;
+    padding-top:10px;
+	margin-top: 302px;
 	letter-spacing:.1em;
 	text-transform: uppercase;
     background: rgba(123, 121, 143, .8);
     text-align:center;
+    height:48px
 }
 
 .banner p {
@@ -915,27 +917,39 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         padding-left: 15%;
         padding-right:0%;
     }
+    .banner h2 {
+	margin-top: 302px;
+	letter-spacing:.05em;
+    font-size:1.2em;
 }
-@media screen and (max-width:447px) {
-	#imagecontainer {
+@media screen and (max-width:480px) {
+	/* general styling*/
+    #imagecontainer {
     margin-right: 9em;
-        margin-bottom:10%;
+    margin-bottom:10%;
     }
     #mainNav {
     font-size: 80%;
     }
-    #skillset h4 {
-        font-size: 0.8em;
+     #socialLinks {
+        padding-left: 14%;
     }
- #maillink {
-        font-size:1.4em;
+        #socialLinks ul li {
+        margin-right:0.6em;
     }
- #socialLinks {
-    padding-left: 13%;
-}
-    #socialLinks ul li {
-    margin-right:0.6em;
-}
+    .banner h2 {
+        padding-top: 2px;
+	letter-spacing:.05em;
+    font-size:1em;
+      }
+        /*home page*/
+        #skillset h4 {
+            font-size: 0.8em;
+        }
+        #skillset li{
+        width:36%;
+        height:450px;
+    }       
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request: h5bp.com/r
