@@ -704,7 +704,9 @@ background-position: -320px 0;
     color: #FFF;
 }
 footer {    
-clear:both;
+    clear:both;
+    background:#222;
+    height: 8em;
 }
 footer div {
     float:left;
