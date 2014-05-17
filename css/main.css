@@ -621,10 +621,11 @@ article {
 	height: 480px;
 	overflow: hidden;
 	background: url(../img/banner.jpg) no-repeat;
+    background-size: 100%;
+    background-position: center;
 	margin-bottom: 2em;
 	position: relative;
     color:#fff;
-    background-size: 100%;
 }
 
 
@@ -883,7 +884,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 @media screen and (max-width:857px) {
     .banner{
         background-size:auto;
-        background-position: center;
     }
     	nav {
     float:left;
