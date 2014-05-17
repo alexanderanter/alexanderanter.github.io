@@ -528,7 +528,6 @@ textarea {
 /*General styles */
 /* Basic general styles*/
 body {
-    max-width: 960px;
     min-width: 293px;
     margin: 0 auto;
     font-family: "PT SANS", Verdana, serif;
@@ -586,18 +585,19 @@ header div {
 	text-decoration:none;
 }
 /*************** NAV **********************************/
-nav {
+Nav {
     float:right;
     padding-top: 32px;
-    padding-right: 9%;
+    padding-right: 13%;
+    min-width: 317px;
 }
-#mainNav ul li {
+Nav ul li {
     display: inline;
     margin-right:0.8em;
     text-transform: uppercase;
     font-weight: 700;
 }
-#mainNav a {
+Nav a {
     font-size:1.2em;
 }
 .active {
@@ -616,39 +616,33 @@ article {
 
 /* HOME CONTENT */
 .banner {
-	height: 350px;
+    clear:both;
+    margin: 0 auto;
+	height: 480px;
 	overflow: hidden;
 	background: url(../img/banner.jpg) no-repeat;
-	margin-bottom: 4em;
+	margin-bottom: 2em;
 	position: relative;
     color:#fff;
+    background-size: 100%;
 }
 
 
 .banner h2 {
 	font-size: 1.5em;
 	color: #fff;
-    padding-top:10px;
-	margin-top: 302px;
-	letter-spacing:.1em;
+    width:100%;
+    letter-spacing:.1em;
 	text-transform: uppercase;
     background: rgba(123, 121, 143, .8);
     text-align:center;
-    height:48px
-}
-
-.banner p {
-	width: 21%;
-	padding: 15px 1% 0;
-	height: 335px;
-	font-size: .9em;
-	line-height: 1.9;
-	color: #fff;
-	background: rgba(123, 121, 143, .8);
-	position: absolute;
-	top: 0;
+    height:48px;
+    margin: 0;
+    position: absolute;
+	bottom: 0;
 	right: 0;
 }
+
 
 /*skill styles*/
 
@@ -703,14 +697,15 @@ background-position: -320px 0;
 }
 /*********** FOOTER  **************/
 #copyright p {
+    float:left;
     color: #FFF;
 }
 footer {    
     clear:both;
-    background:#222;
+    background:#3b3b3b;
     height: 8em;
 }
-footer div {
+footer div+div {
     float:left;
 }
 #copyright{
@@ -784,8 +779,9 @@ background-position: 0px -6px;
   height: 25px;
 }
 /* Grouped styles across certain pages*/
-#about, #cv {
-    margin: 0 2%;
+#about, #cv, #home, header, .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #about li, #cv li {
         list-style: none;
@@ -793,6 +789,7 @@ background-position: 0px -6px;
 /**************************************Individual page styles **********************/
 
 /******************************************** ABOUT ME ****************************/
+
 .about-image {
 	-ms-transform:		rotate(6deg);
 	-moz-transform:		rotate(6deg); 
@@ -883,19 +880,26 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 
 
 /****************RESPONSIVE DESIGN ******/
-
-@media screen and (max-width:688px) {
-	nav {
-    float:left;
-        margin-left:0;
-        padding-left:0;
+@media screen and (max-width:857px) {
+    .banner{
+        background-size:auto;
+        background-position: center;
     }
+    	nav {
+    float:left;
+        padding-left:0;
+        padding-right: 0;
+    }
+    
+}
+@media screen and (max-width:688px) {
+
 
     #skillset h4 {
         font-size: 0.9em;
     }
     #skillset li p {
-	font-size: 0.9em;
+	   font-size: 0.9em;
     }
     
     #maillink {
@@ -903,33 +907,38 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     }
     
     #copyright {
-    padding-left: 20%;
-}  
+        padding-left: 20%;
+    }  
     
     #socialLinks ul li {
         display: inline;
     }
     #socialLinks ul li {
-    margin-right:2em;
-}
+        margin-right:2em;
+    }
     #socialLinks {
         float:left;
         padding-left: 15%;
         padding-right:0%;
     }
+    
     .banner h2 {
-	margin-top: 302px;
-	letter-spacing:.05em;
-    font-size:1.2em;
+        letter-spacing:.05em;
+        font-size:1.2em;
+    }
 }
 @media screen and (max-width:480px) {
 	/* general styling*/
     #imagecontainer {
+     
     margin-right: 9em;
     margin-bottom:10%;
     }
-    #mainNav {
-    font-size: 80%;
+   #about p {
+   clear:both;
+   }
+    Nav {
+    font-size: 0.8em;
     }
      #socialLinks {
         padding-left: 14%;
@@ -938,7 +947,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         margin-right:0.6em;
     }
     .banner h2 {
-        padding-top: 2px;
 	letter-spacing:.05em;
     font-size:1em;
       }
@@ -948,8 +956,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         }
         #skillset li{
         width:36%;
-        height:450px;
+        height:470px;
     }       
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request: h5bp.com/r
