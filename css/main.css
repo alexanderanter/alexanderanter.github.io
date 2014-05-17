@@ -642,6 +642,7 @@ article {
     position: absolute;
 	bottom: 0;
 	right: 0;
+      padding-top:20px;
 }
 
 
@@ -947,8 +948,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         margin-right:0.6em;
     }
     .banner h2 {
+  
 	letter-spacing:.05em;
-    font-size:1em;
+    font-size:0.9em;
       }
         /*home page*/
         #skillset h4 {
