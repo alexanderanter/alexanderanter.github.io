@@ -576,7 +576,7 @@ a:focus { color: #5C492C;
 a:hover { color: #5C492C; 
 	text-decoration:none;
 }
-a:active { color: #CCC; 
+a:active { color: #000; 
 	text-decoration:none;
 }
 
@@ -1049,14 +1049,14 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 }
 
 @media screen and (max-width:375px) {
- .navigation  a:hover::before,
-.navigation a:hover::after,
-#active::before,
-#active::after,
-.navigation  a:focus::before,
-.navigation  a:focus::after {
-	opacity: 0;
-}
+     .navigation  a:hover::before,
+    .navigation a:hover::after,
+    #active::before,
+    #active::after,
+    .navigation  a:focus::before,
+    .navigation  a:focus::after {
+        opacity: 0;
+    }
 }
 /* ==========================================================================
    Print styles.
