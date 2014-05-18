@@ -1011,8 +1011,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     font-size: 0.8em;
     }
     #socialLinks ul{
-         padding:0;
-        margin:1% auto;
+        padding:0 0 5% 0;
+        margin:0;
     }
     #copyright p{
         padding-right:5%;
@@ -1046,6 +1046,17 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     #logo {
     padding-right: 0;
     }
+}
+
+@media screen and (max-width:375px) {
+ .navigation  a:hover::before,
+.navigation a:hover::after,
+#active::before,
+#active::after,
+.navigation  a:focus::before,
+.navigation  a:focus::after {
+	opacity: 0;
+}
 }
 /* ==========================================================================
    Print styles.
