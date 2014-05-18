@@ -812,6 +812,9 @@ background-position: 0px -6px;
 #about li, #cv li {
         list-style: none;
 }
+#about, #cv, #home, #contact {
+    padding-bottom:1%;
+}
 /**************************************Individual page styles **********************/
 
 /******************************************** ABOUT ME ****************************/
