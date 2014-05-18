@@ -981,9 +981,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
             font-size: 0.8em;
         }
         #skillset li{
-        width:36%;
+        width:45%;
         height:470px;
     }     
+    #skillset li.thirdskill{
+        padding-right:5%;
+    }
     .banner{
      height: 148px;
     
