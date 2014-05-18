@@ -591,6 +591,7 @@ h3 {
     letter-spacing: 0.08em;
    	text-transform: uppercase;
     text-align:center;
+    color: #393230;
 }
 h4{
     font-size: 1.1em;
@@ -805,6 +806,7 @@ background-position: 0px -6px;
   width: 25px;
   height: 25px;
 }
+
 /* Grouped styles across certain pages*/
 #about, #cv, #home, #contact, header, footer {
     max-width: 1200px;
@@ -814,7 +816,7 @@ background-position: 0px -6px;
 #about li, #cv li {
         list-style: none;
 }
-#about, #cv, #home, #contact {
+#about, #cv, #home, #contact,  {
     padding-bottom:1%;
 }
 /**************************************Individual page styles **********************/
@@ -939,13 +941,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     #maillink {
         font-size:1.8em;
     }
-    
-    #socialLinks ul li {
-        display: inline;
-    }
-
-
-    
     .banner h2 {
         letter-spacing:.05em;
         font-size:1.2em;
@@ -975,7 +970,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     }
     #socialLinks ul{
          padding:0;
-        margin:0 auto;
+        margin:1% auto;
     }
     #copyright p{
         padding-right:5%;
@@ -1003,8 +998,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
      height: 148px;
     
     }
-    
-    
         #socialLinks {
         float:left;
     }
