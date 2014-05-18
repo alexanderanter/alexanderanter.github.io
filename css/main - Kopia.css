@@ -602,7 +602,9 @@ clear:both;
 header div {
     float:left;
 }
-
+#logo{
+    margin-left:5%;
+}
 #logo a {
     color: #000;
 }
@@ -613,6 +615,7 @@ header div {
 Nav {
     float:right;
     padding-top: 32px;
+    padding-right: 9%;
     min-width: 317px;
 }
 Nav ul li {
@@ -674,21 +677,16 @@ article {
 
 #skillset { 
     overflow: hidden;    
-    margin:0;
-    padding:0;
 }
 
 #skillset li{
     float:left;
-    padding-right: 5%;
+    padding: 0 2.5%;
     margin-top:5px;
 	display: block;
 	color: rgb(76, 67, 65);
 	border: none;
-    width:30%;
-}
-#skillset li.thirdskill{
-    padding-right:0;
+    width:26%;
 }
 #skillset li p {
 	font-size: 1em;
@@ -732,14 +730,18 @@ background-position: -320px 0;
 footer {    
     clear:both;
     background:#3b3b3b;
+    height: 8em;
 }
 footer div+div {
     float:left;
 }
-
+#copyright{
+    margin-left:3.2%;
+}
 /*************** NAV **********************************/
 #socialLinks {
     float:right;
+    padding-right: 9%;
 }
 #socialLinks ul li {
     display: inline;
@@ -807,7 +809,6 @@ background-position: 0px -6px;
 #about, #cv, #home, header, .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding:5%;
 }
 #about li, #cv li {
         list-style: none;
@@ -884,6 +885,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 }
 #about {
  min-width:200px;
+padding: 0 7%;
 
 }
 #about p {
@@ -895,9 +897,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 /************************************** C V ********************************/
 #cv h4{
     text-transform: uppercase;
-}
-#cv ul {
-    padding: 0;
 }
 /*END OF CV*/
 /******************** CONTACT *******************************/
@@ -931,11 +930,21 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         font-size:1.8em;
     }
     
+    #copyright {
+        padding-left: 20%;
+    }  
+    
     #socialLinks ul li {
         display: inline;
     }
-
-
+    #socialLinks ul li {
+        margin-right:2em;
+    }
+    #socialLinks {
+        float:left;
+        padding-left: 15%;
+        padding-right:0%;
+    }
     
     .banner h2 {
         letter-spacing:.05em;
@@ -943,7 +952,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     }
     nav {
         float:left;
+        padding-left: 15%;
     }
+    
     .banner{
      height: 235px;
     }
@@ -961,12 +972,8 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     Nav {
     font-size: 0.8em;
     }
-    #socialLinks ul{
-         padding:0;
-        margin:0 auto;
-    }
-    #copyright p{
-        padding-right:5%;
+     #socialLinks {
+        padding-left: 14%;
     }
         #socialLinks ul li {
         margin-right:0.6em;
@@ -987,11 +994,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     .banner{
      height: 148px;
     
-    }
-    
-    
-        #socialLinks {
-        float:left;
     }
 }
 /* ==========================================================================
