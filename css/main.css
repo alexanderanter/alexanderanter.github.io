@@ -804,10 +804,10 @@ background-position: 0px -6px;
   height: 25px;
 }
 /* Grouped styles across certain pages*/
-#about, #cv, #home, header, .wrapper {
+#about, #cv, #home, #contact, header, .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding:5%;
+    padding:0 5%;
 }
 #about li, #cv li {
         list-style: none;
