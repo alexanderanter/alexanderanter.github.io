@@ -807,7 +807,9 @@ background-position: 0px -6px;
   height: 25px;
 }
 
-/* Grouped styles across certain pages*/
+/**********************************************************************************
+                        Grouped styles across certain pages
+***********************************************************************************/
 #about, #cv, #home, #contact, header, footer {
     max-width: 1200px;
     margin: 0 auto;
@@ -816,9 +818,10 @@ background-position: 0px -6px;
 #about li, #cv li {
         list-style: none;
 }
-#about, #cv, #home, #contact,  {
+#about, #cv, #home, #contact  {
     padding-bottom:1%;
 }
+
 /**************************************Individual page styles **********************/
 
 /******************************************** ABOUT ME ****************************/
@@ -886,9 +889,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 	box-shadow: inset 0px 1px #fff, 0 4px 6px rgba(13, 28, 36, 0.08);
 }
 
-#imagecontainer{
-    margin-left:0;
-}
+
 #about {
  min-width:200px;
 
@@ -917,10 +918,12 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     margin: 0 auto;
 }
 
-/*************** END OF CONTACT***************/
+/*END OF CONTACT*/
 
 
-/****************RESPONSIVE DESIGN ******/
+/***********************************************************************************
+                            RESPONSIVE DESIGN 
+************************************************************************************/
 @media screen and (max-width:971px) {
     .banner{
      height: 360px;
