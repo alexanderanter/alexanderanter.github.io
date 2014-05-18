@@ -880,15 +880,19 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 }
 
 #imagecontainer{
-    margin-left:2%;
+    margin-left:0;
 }
 #about {
  min-width:200px;
 
 }
 #about p {
-    margin:1em 2%;
+    margin:1em 0;
 }
+#about ul{
+    padding:0;
+}
+
 /*End of about*/
 
 
