@@ -804,7 +804,7 @@ background-position: 0px -6px;
   height: 25px;
 }
 /* Grouped styles across certain pages*/
-#about, #cv, #home, #contact, header, .wrapper {
+#about, #cv, #home, #contact, header, footer {
     max-width: 1200px;
     margin: 0 auto;
     padding:0 5%;
