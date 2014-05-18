@@ -602,7 +602,9 @@ clear:both;
 header div {
     float:left;
 }
-
+#logo {
+    padding-right: 3%;
+}
 #logo a {
     color: #000;
 }
@@ -951,6 +953,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     nav {
         float:left;
     }
+    nav ul{
+    padding:0;
+    }
     .banner{
      height: 235px;
     }
@@ -989,7 +994,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         }
         #skillset li{
         width:45%;
-        height:470px;
+        height:400px;
     }     
     #skillset li.thirdskill{
         padding-right:5%;
@@ -1002,6 +1007,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     
         #socialLinks {
         float:left;
+    }
+    #logo {
+    padding-right: 0;
     }
 }
 /* ==========================================================================
