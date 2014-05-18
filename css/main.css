@@ -556,9 +556,10 @@ body {
     margin: 0 auto;
     font-family: "PT SANS", Verdana, serif;
     font-size: 100%;
-
+    color: rgb(76, 67, 65);
 
 }
+
 a {
 	outline: none; 
 	text-decoration:underline;
@@ -690,7 +691,6 @@ article {
 #skillset li p {
 	font-size: 1em;
 	display: block;
-	color: #000
 }
 #skillset h4 {
     height:3em;
@@ -907,9 +907,9 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
 
 
 /****************RESPONSIVE DESIGN ******/
-@media screen and (max-width:857px) {
+@media screen and (max-width:971px) {
     .banner{
-        background-size:auto;
+     height: 360px;
     }
     	
     
@@ -952,6 +952,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         float:left;
         padding-left: 15%;
     }
+    
+    .banner{
+     height: 235px;
+    }
 }
 @media screen and (max-width:480px) {
 	/* general styling*/
@@ -984,7 +988,11 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
         #skillset li{
         width:36%;
         height:470px;
-    }       
+    }     
+    .banner{
+     height: 148px;
+    
+    }
 }
 /* ==========================================================================
    Print styles.
