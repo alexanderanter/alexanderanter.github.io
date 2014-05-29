@@ -9,6 +9,9 @@
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
+             <!-- Skype chat button script-->
+        <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js">
+        </script>
     </head>
     <body>
     <!-- IE FIXES! -->
@@ -41,6 +44,8 @@
         <article id="contact">
             <h3>Contact</h3>
                         <h2 id ="maillink"><a href="mailto:contactanter@gmail.com">contactanter@gmail.com</a></h2>
+              <div id="SkypeButton_Call_alexanderanter_1">
+                        </div>
         </article>
         <footer>
             <div id="copyright">
@@ -60,6 +65,17 @@
                 </ul>                
             </div>
         </footer>
+        
+   
+        <!-- Skype chat button script-->
+    <script type="text/javascript">
+        Skype.ui({
+          "name": "chat",
+          "element": "SkypeButton_Call_alexanderanter_1",
+          "participants": ["alexanderanter"],
+          "imageSize": 32
+        });
+    </script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
