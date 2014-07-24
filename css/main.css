@@ -1062,6 +1062,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9fafa', endCo
     .navigation  a:focus::after {
         opacity: 0;
     }
+    Nav {
+    font-size: 0.7em;
+    }
+    
 }
 /* ==========================================================================
    Print styles.
