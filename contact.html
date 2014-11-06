@@ -7,7 +7,9 @@
         <meta name="description" content="Front-end web developer Alexander Anters website">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="stylesheet" href="css/main.css">
+
+         <link rel="stylesheet" href="css/form.css">
+          <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.0.min.js"></script>
              <!-- Skype chat button script-->
         <script type="text/javascript" src="http://www.skypeassets.com/i/scom/js/skype-uri.js">
@@ -43,9 +45,31 @@
         </header>
         <article id="contact">
             <h3>Contact</h3>
-                        <h2 id ="maillink"><a href="mailto:contactanter@gmail.com">contactanter@gmail.com</a></h2>
-              <div id="SkypeButton_Call_alexanderanter_1">
-                        </div>
+                                  <FORM ACTION="http://web.internet.telia.com/cgi-bin/formmailer" METHOD="POST" name="contact-form">
+                    <INPUT TYPE="hidden" NAME="to" VALUE="freeeestar@gmail.com">
+                    <INPUT TYPE="hidden" NAME="subject" VALUE="Meddelande fr&aring;n hemsidan" SIZE="50">          
+                    <INPUT TYPE="hidden" NAME="successurl" VALUE="http://www.anter-info.se/msg_confirm.htm">
+                    <INPUT TYPE="hidden" NAME="failureurl" VALUE="http://www.anter-info.se/msg_failure.htm">
+                    <input type="hidden" name="from" VALUE="www@web.internet.telia.com" >                    
+                    
+                  <div class="row-fluid">
+                    <div class="span5">
+                        <label>Name</label>
+                        <input type="text" name="realname" VALUE="" SIZE="60" maxlength="60" tabindex="1"  class="input-block-level" required="required" placeholder="Name..." equired="required" oninvalid="this.setCustomValidity('Fyll i ditt namn h&auml;r')" oninput="setCustomValidity('')">
+                        <label>Email-address</label>
+                        <input name="epost" VALUE="" SIZE="60" maxlength="99" tabindex="4" type="text" class="input-block-level" placeholder="Email-adress..." required="required" oninvalid="this.setCustomValidity('Fyll i din email h&auml;r')" oninput="setCustomValidity('')">
+                    </div>
+                    <div class="span7">
+                        <label>Message</label>
+                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8" oninvalid="this.setCustomValidity('Meddelandef&auml;ltet &auml;r tomt')" oninput="setCustomValidity('')"></textarea>
+                    </div>
+
+                </div>
+   
+                                <INPUT TYPE="submit" VALUE="Send Message" NAME="sumbitButton" SIZE="1"  class="btn">
+                <p> </p>
+
+            </form>
         </article>
         <footer>
             <div id="copyright">
@@ -66,16 +90,6 @@
             </div>
         </footer>
         
-   
-        <!-- Skype chat button script-->
-    <script type="text/javascript">
-        Skype.ui({
-          "name": "chat",
-          "element": "SkypeButton_Call_alexanderanter_1",
-          "participants": ["alexanderanter"],
-          "imageSize": 32
-        });
-    </script>
 
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
